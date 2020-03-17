@@ -1,3 +1,4 @@
+use ebola;
 LOAD DATA INFILE 'ebola_data_db_format.csv' 
 INTO TABLE ebola.ebola_country
 FIELDS TERMINATED BY ','

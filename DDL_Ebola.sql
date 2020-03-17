@@ -1,5 +1,5 @@
 Create database ebola;
-
+use ebola;
 
   CREATE TABLE ebola_country (
   indicator varchar(500) DEFAULT NULL,

@@ -1,3 +1,5 @@
+use ebola;
+
 DELIMITER $$ 
 DROP FUNCTION safeDecimalValue;
 CREATE FUNCTION safeDecimalValue(input varchar(20))
