@@ -1,13 +1,13 @@
-Create database ebola;
+create database if not exists ebola;
 use ebola;
 
-  CREATE TABLE ebola_country (
+  CREATE TABLE IF NOT EXISTS ebola_country (
   indicator varchar(500) DEFAULT NULL,
   country varchar(200) DEFAULT NULL,
   data_date date DEFAULT NULL,
   No_of_cases int DEFAULT NULL) ;
   
-  CREATE TABLE country_continent (
+  CREATE TABLE IF NOT EXISTS country_continent (
   continent_name varchar(100) DEFAULT NULL,
   continent_code varchar(10) DEFAULT NULL,
   country_name varchar(100) DEFAULT NULL,
@@ -15,7 +15,7 @@ use ebola;
   three_letter_country_code varchar(10) DEFAULT NULL,
   country_number int DEFAULT NULL);
   
-  CREATE TABLE country_demography (
+  CREATE TABLE IF NOT EXISTS country_demography (
   country varchar(100) DEFAULT NULL,
   Population decimal(15,2) DEFAULT NULL,
   Area_sq_mi decimal(15,2) DEFAULT NULL,
